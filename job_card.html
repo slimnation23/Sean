@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .checkbox {
+            position: relative;
+        }
+        .checkbox__input {
+            appearance: none;
+            position: absolute;
+        }
+        .checkbox__label {
+            font-size: 26px;
+            padding-left: 50px;
+            color: rgb(28, 75, 151);
+            font-weight: 900;
+        }
+        .checkbox__label::before {
+            content: '';
+            display: block;
+            width: 31px;
+            height: 31px;
+            
+            border: 2px solid #262626;
+            border-radius: 5px;
+            background-color: transparent;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .checkbox__label::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 5px;
+            z-index: 2;
+            opacity: 0;
+            width: 20px;
+            height: 10px;
+            border-left: 5px solid #262626;
+            border-bottom: 5px solid #262626;
+            transform: rotate(-45deg);
+            transition: opacity .1s linear;
+        }
+        .checkbox__input:checked + .checkbox__label::after {
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body style="font-family: 'Lato', sans-serif;">
+    
+    <div style="width: 750px; height: 630px; margin: 0 auto;">
+        <div style="height: 124px; width: 100%; background-color: #f0f0f0; display: flex; align-items: center; padding-left: 33px;">
+            <img src="img/panasonic.png" alt="logo" style="margin-right: 160px;">
+            <div style="font-size: 48px; font-weight: 700; color: rgb(153, 153, 153);">Job Card</div>
+        </div>
+        <!-- header -->
+
+        <div style="padding: 15px 34px 40px 26px; width: 100%;">
+            <div style="display: flex; margin-bottom: 40px;">
+                <div style="display: flex; flex-direction: column; width: 50%;">
+                    <div style="font-size: 26px; color: rgb(28, 75, 151); font-weight: 900;">Customer Information</div>
+                    <div style="width: 100%; height: 1px; background-color: #8e8e8e; margin-top: 10px; margin-bottom: 10px;"></div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">Name:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">Abhishek Upmanyu</div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">Email:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">abupmanyu@gmail.com</div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">Mobile:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">+919820034252</div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">Address:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">+B7-22, Imperial Tower, <br> Indira Nagar, M G Rd,</div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">City:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">Chennai</div>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 90px;">Pincode:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">380021</div>
+                    </div>
+                </div>
+                <!-- left -->
+    
+                <div style="display: flex; flex-direction: column; width: 50%;">
+                    <div style="font-size: 26px; color: rgb(28, 75, 151); font-weight: 900;">Product Details</div>
+                    <div style="width: 95%; height: 1px; background-color: #8e8e8e; margin-top: 10px; margin-bottom: 10px;"></div>
+                    <div style="display: flex; width: 100%; line-height: 1.5;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Date of Purchase:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">22/06/2020</div>
+                    </div>
+                    <div style="display: flex; width: 100%;  line-height: 1.2;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Model Name:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">Symphony</div>
+                    </div>
+                    <div style="display: flex; width: 100%;  line-height: 1.2;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Model Number:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">422</div>
+                    </div>
+                    <div style="display: flex; width: 100%;  line-height: 1.2;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Serial Number:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">87970012</div>
+                    </div>
+                    <div style="display: flex; width: 100%;  line-height: 1.2;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Preferred Install date:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">24/07/2020</div>
+                    </div>
+                    <div style="display: flex; width: 100%;  line-height: 1.2;">
+                        <div style="font-size: 20px; color: rgb(28, 75, 151); font-weight: bold; width: 211px;">Job ID Number:</div>
+                        <div style="color: rgb(204, 204, 204); font-size: 20px; font-weight: 700;">WS65748</div>
+                    </div>
+                </div>
+                <!-- right -->
+            </div>
+
+            <div style="font-size: 26px; color: rgb(28, 75, 151); font-weight: 900;">Job Type</div>
+            <div style="width: 100%; height: 2px; background-color: #8e8e8e; margin-top: 10px; margin-bottom: 20px;"></div>
+
+            <div style="display: flex; margin-bottom: 27px;">
+                <div style="display: flex; width: 100%;">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="checkbox_1">
+                        <label for="checkbox_1" class="checkbox__label">Product Installation</label>
+                    </div>
+                </div>
+    
+                <div style="display: flex; width: 100%;">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="checkbox_2">
+                        <label for="checkbox_2" class="checkbox__label">Product Repair</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 100%; font-size: 24px; color: rgb(187, 187, 187); font-weight: 700;">For any queries regarding your product installation, please call
+                on 1800 457887 or visit www.panasonic-service.com</div>
+        </div>
+        <!-- main -->
+    </div>
+      
+</body>
+</html>
+
+
+  
